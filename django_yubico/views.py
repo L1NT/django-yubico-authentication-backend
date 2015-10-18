@@ -9,7 +9,7 @@ from django.core.urlresolvers import reverse
 
 from django.views.decorators.cache import never_cache
 
-from forms import LoginForm, PasswordForm
+from django_yubico.forms import LoginForm, PasswordForm
 
 # Ask for the user password after the token
 YUBIKEY_USE_PASSWORD = getattr(settings, 'YUBICO_USE_PASSWORD', True)
